@@ -1,0 +1,19 @@
+﻿生成启动时间为 2015/4/19 17:44:58。
+     1>项目“E:\C\udp\recv\recv.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         E:\Vs 2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt recv.cpp
+         recv.cpp
+       PreLinkEvent:
+         copyright.bat
+         :VCEnd
+         ===本程序下载于VC知识库(www.vckbase.com)===
+         -------技术支持由UIPower提供(www.uipower.com)------
+         ......如遇到任何技术问题请发邮件vckbase@vckbase.com......
+       Link:
+         E:\Vs 2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:".\Debug\recv.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:".\Debug\recv.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\recv.lib" /MACHINE:X86 /SAFESEH .\Debug\recv.obj
+         recv.vcxproj -> E:\C\udp\recv\.\Debug\recv.exe
+     1>已完成生成项目“E:\C\udp\recv\recv.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.83

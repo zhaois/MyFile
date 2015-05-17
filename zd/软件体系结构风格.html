@@ -1,0 +1,146 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+<title>软件体系结构风格</title>
+</head>
+<body>
+<h1 align="center" class="root">
+<a href="#6uh854giqoks4bohe4i6r85v3r" name="5s30ocg15j5pl2og75c9r4safc">软件体系结构风格</a>
+</h1>
+<p align="center" class="labelsAndMarkers">
+<span class="label">软件体系结构风格是描述某一特定领域中系统组织方式的惯用手法</span>
+</p>
+<h2 class="topic">
+<a name="2g5vc5fsk86p8ve2au900jnd11">管道和过滤器</a>
+</h2>
+<p class="labelsAndMarkers">
+<span class="label">思想，优缺点</span>
+</p>
+<h3 class="topic">
+<a name="5jee63cufrknonlfs9ncdv2vlb">&nbsp;示意图</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/images/emotion_smile.png"></p>
+<p class="topicImage">
+<img height="144" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/08mdo0om8bsjck9ig4u6cbe5vs.jpg" width="400"></p>
+<h3 class="topic">
+<a name="6qh6sbgadve981gjsgdnijv2la">&nbsp;思想</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/images/emotion_surprise.png"></p>
+<div class="notesContainer">
+<p>每个构件都有一组输入和输出，构件读输入的数据流，经过内部处理，然后产生输出数据流</p>
+</div>
+<h3 class="topic">
+<a name="542madvpn1qgudbdiulu1hcgtn">&nbsp;优点</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/images/emotion_laugh.png"></p>
+<div class="notesContainer">
+<p>1.使得软件具有良好的隐蔽性和高内聚，低耦合的特点</p>
+<p>2.允许设计者将整个系统的输入/输出行为看成多个过滤器的行为的简单合成</p>
+<p>3.支持软件重用。</p>
+<p>4.系统维护和增强系统性能简单</p>
+<p>5.允许对一些如吞吐量，死锁等属性的分析</p>
+<p>6.支持并行执行</p>
+</div>
+<h3 class="topic">
+<a name="63ftic9slc8bk3o5lf7ss27080">&nbsp;缺点</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/images/emotion_cry.png"></p>
+<div class="notesContainer">
+<p>1.通常导致进程成为批处理的结构。（因为过滤器是独立的）</p>
+<p>2.不适合处理交互式的应用</p>
+<p>3.数据标准不统一，会导致系统性能下降</p>
+</div>
+<h2 class="topic">
+<a name="78qm1p3p69henmcn2ptcef7knd">分层系统</a>
+</h2>
+<p class="labelsAndMarkers">
+<span class="label">怎么划分层，各层特点</span>
+</p>
+<h3 class="topic">
+<a name="0bb2ep19fj8n1a7m9jnvur6v8n">&nbsp;示意图</a>
+</h3>
+<p class="topicImage">
+<img height="339" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/0j75kpv8j1id4ovileqo8sa5uf.jpg" width="400"></p>
+<h3 class="topic">
+<a name="7jcdc5s4m6f7af1nq0pkqv3v92">&nbsp;层次划分</a>
+</h3>
+<div class="notesContainer">
+<p>1.用户系统层</p>
+<p>2.基本工具</p>
+<p>3.核心层</p>
+</div>
+<h2 class="topic">
+<a name="4gavaedhqov74n5832kjv1lhcq">C2风格</a>
+</h2>
+<p class="labelsAndMarkers">
+<span class="label">通过连接件绑定在一起按照一组规则运作的并行构件网络</span>
+</p>
+<h3 class="topic">
+<a name="5qmnrri6l295mj7ah6ujbi3cur">&nbsp;示意图</a>
+</h3>
+<p class="topicImage">
+<img height="224" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/0rf467q7qj77e0d0n6j1nv190e.jpg" width="400"></p>
+<h3 class="topic">
+<a name="22fek5j5ailkdlqk0isbpm60fm">&nbsp;规则</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/images/emotion_boring.png"></p>
+<div class="notesContainer">
+<p>1.系统的构件和连接件都有一个顶部和底部</p>
+<p>2.构件的顶部连接到某连接件的底部，构件的底部则连到某连接件的顶部，不允许构件之间 直连</p>
+<p>3. 一个连接件可以和任意数目的其他构件和连接件相连</p>
+<p>4. 当两个连接件进行直接连接时，必须由其中一个的底部到另一个的顶部</p>
+</div>
+<h2 class="topic">
+<a name="5v9hrvpaiiotp210q103ss0agf">三层C/S 结构风格</a>
+</h2>
+<p class="labelsAndMarkers">
+<span class="label">哪三层，优缺点</span>
+</p>
+<h3 class="topic">
+<a name="3r6oo9k9u1vd2sl3hlvbftb6ln">&nbsp;表示层</a>
+</h3>
+<h3 class="topic">
+<a name="1lc53b5uerh01pk9ndl91mmc1r">&nbsp;功能层</a>
+</h3>
+<h3 class="topic">
+<a name="7cr42vestulnnog5jfdia7t7st">&nbsp;数据层</a>
+</h3>
+<h3 class="topic">
+<a name="3e3kph3p352bibbb1gmdsktppl">&nbsp;优点</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/images/emotion_smile.png"></p>
+<div class="notesContainer">
+<p>1.允许合理的划分三层结构的功能，是之在逻辑上保持相对独立性，从而使整个系统的逻辑结构清晰，能够提高系统软件的可维护性和可扩展性</p>
+<p>2.允许更灵活有效的选用相应的平台和硬件系统，使之在处理负荷能力上与处理特性上分别适应结构清晰的三层；并且这些平台和各个组成部分可以具有良好的可升级性和开放性</p>
+<p>3.各层允许并行开发，</p>
+<p>4.充分利用功能层有效的隔离开表示层与数据层，增加系统安全系数</p>
+</div>
+<h3 class="topic">
+<a name="30nsi8bqhr4q8p9b6tpg3ri9jd">&nbsp;不足</a>
+</h3>
+<p class="labelsAndMarkers">
+<img class="marker" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/images/emotion_angry.png"></p>
+<div class="notesContainer">
+<p>在通信效率不高的情况下，即使各层的硬件性能很强，其作为整体也达不到所要求的性能。对通信要求很高</p>
+</div>
+<h2 class="topic">
+<a name="05bq03lniuu1el0i5jesuikne2">公共对象请求代理体系结构</a>
+</h2>
+<p class="labelsAndMarkers">
+<img class="marker" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/images/emotion_smile.png">, <span class="label">图 3-15 P66</span>
+</p>
+<h3 class="topic">
+<a name="1dov7kd8qul95tjrv8c0ojt309">&nbsp;示意图</a>
+</h3>
+<p class="topicImage">
+<img height="244" src="%E8%BD%AF%E4%BB%B6%E4%BD%93%E7%B3%BB%E7%BB%93%E6%9E%84%E9%A3%8E%E6%A0%BC_files/0agpfnosu48etb10gqammdi8vh.jpg" width="400"></p>
+</body>
+</html>
